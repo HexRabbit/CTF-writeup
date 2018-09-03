@@ -1,0 +1,71 @@
+Gadgets information
+============================================================
+0x0000000000400752 : adc byte ptr [rax], ah ; jmp rax
+0x0000000000400887 : adc eax, 0x90fffffe ; pop rbp ; ret
+0x0000000000400885 : add al, ch ; adc eax, 0x90fffffe ; pop rbp ; ret
+0x0000000000400a5f : add bl, dh ; ret
+0x0000000000400a5d : add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400a5b : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x000000000040075c : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400a5c : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x000000000040075e : add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400a5e : add byte ptr [rax], al ; ret
+0x00000000004007c8 : add byte ptr [rcx], al ; ret
+0x00000000004007c4 : add eax, 0x2008de ; add ebx, esi ; ret
+0x00000000004008e1 : add eax, 0xfffdc9e8 ; dec ecx ; ret
+0x00000000004007c9 : add ebx, esi ; ret
+0x000000000040066b : add esp, 8 ; ret
+0x000000000040066a : add rsp, 8 ; ret
+0x00000000004007c7 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x0000000000400661 : and byte ptr [rax], al ; test rax, rax ; je 0x400671 ; call rax
+0x0000000000400a39 : call qword ptr [r12 + rbx*8]
+0x0000000000400a3a : call qword ptr [rsp + rbx*8]
+0x0000000000400668 : call rax
+0x00000000004008e6 : dec ecx ; ret
+0x00000000004007c5 : fimul word ptr [rax] ; and byte ptr [rax], al ; add ebx, esi ; ret
+0x0000000000400a3c : fmul qword ptr [rax - 0x7d] ; ret
+0x00000000004007e9 : int1 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400666 : je 0x40066c ; call rax
+0x000000000040074d : je 0x400768 ; pop rbp ; mov edi, 0x601068 ; jmp rax
+0x000000000040079b : je 0x4007b0 ; pop rbp ; mov edi, 0x601068 ; jmp rax
+0x00000000004007e8 : je 0x4007e1 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400b07 : jmp qword ptr [rax]
+0x0000000000400755 : jmp rax
+0x00000000004008e7 : leave ; ret
+0x00000000004007c3 : mov byte ptr [rip + 0x2008de], 1 ; ret
+0x00000000004007ec : mov ebp, esp ; call rax
+0x0000000000400750 : mov edi, 0x601068 ; jmp rax
+0x0000000000400a37 : mov edi, edi ; call qword ptr [r12 + rbx*8]
+0x0000000000400a36 : mov edi, r15d ; call qword ptr [r12 + rbx*8]
+0x00000000004007eb : mov rbp, rsp ; call rax
+0x0000000000400854 : nop ; pop rbp ; ret
+0x0000000000400758 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x0000000000400a58 : nop dword ptr [rax + rax] ; ret
+0x00000000004007a5 : nop dword ptr [rax] ; pop rbp ; ret
+0x00000000004007c6 : or byte ptr [rax], ah ; add byte ptr [rcx], al ; ret
+0x0000000000400a4c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400a4e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400a50 : pop r14 ; pop r15 ; ret
+0x0000000000400a52 : pop r15 ; ret
+0x00000000004007c2 : pop rbp ; mov byte ptr [rip + 0x2008de], 1 ; ret
+0x000000000040074f : pop rbp ; mov edi, 0x601068 ; jmp rax
+0x0000000000400a4b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400a4f : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000400760 : pop rbp ; ret
+0x0000000000400a53 : pop rdi ; ret
+0x0000000000400a51 : pop rsi ; pop r15 ; ret
+0x0000000000400a4d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004007ea : push rbp ; mov rbp, rsp ; call rax
+0x000000000040066e : ret
+0x00000000004007e7 : sal byte ptr [rcx + rsi*8 + 0x55], 0x48 ; mov ebp, esp ; call rax
+0x0000000000400665 : sal byte ptr [rdx + rax - 1], 0xd0 ; add rsp, 8 ; ret
+0x0000000000400a65 : sub esp, 8 ; add rsp, 8 ; ret
+0x0000000000400a64 : sub rsp, 8 ; add rsp, 8 ; ret
+0x000000000040075a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400a5a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400664 : test eax, eax ; je 0x40066e ; call rax
+0x00000000004007e6 : test eax, eax ; je 0x4007e3 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400663 : test rax, rax ; je 0x40066f ; call rax
+0x00000000004007e5 : test rax, rax ; je 0x4007e4 ; push rbp ; mov rbp, rsp ; call rax
+
+Unique gadgets found: 67
