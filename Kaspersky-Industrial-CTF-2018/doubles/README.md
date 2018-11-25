@@ -68,8 +68,8 @@ LABEL_10:
 <img src="https://latex.codecogs.com/gif.latex?Value%20%3D%20sign%20%5Ctimes%202%5E%7Bexponent-1023%7D%20%5Ctimes%201.fraction" />
 
 有一個很直覺的想法是，如果可以保證我們在操作 double 時就像是在操作 integer，那題目就會被轉換成一個小學數學問題，那要怎麼做呢?
-我想到的方法是讓每個輸入的 double 的 exponent 位都是 1023+52 = 1075，因為這樣會使得 <img src="https://latex.codecogs.com/gif.latex?2%5E%7Bexponent-1023%7D%20%5Ctimes%201.fraction" /> 中小數點會被向右位移 52 次，也就是這樣做可以保證每個產出的 double 小數點下都為 0 
-(<img src="https://latex.codecogs.com/gif.latex?fraction" /> 只有 52 位長)。實作的方式就是設定每個 double 的最高位和第二高位依序為`\x43`跟`\x30`，這樣就可以開始 exploit 了。
+
+我想到的方法是讓每個輸入的 double 的 exponent 位都是 1023+52 = 1075，因為這樣會使得 <img src="https://latex.codecogs.com/gif.latex?2%5E%7Bexponent-1023%7D%20%5Ctimes%201.fraction" /> 中小數點會被向右位移 52 次，也就是這樣做可以保證每個產出的 double 小數點下都為 0 (<img src="https://latex.codecogs.com/gif.latex?fraction" /> 只有 52 位長)。實作的方式就是設定每個 double 的最高位和第二高位依序為`\x43`跟`\x30`，這樣就可以開始 exploit 了。
 
 ### Exploitation
 
