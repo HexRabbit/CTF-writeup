@@ -1,0 +1,6 @@
+messy_printer:
+    build: .
+    ports:
+        - "4001:4001"
+    expose:
+        - "4001"

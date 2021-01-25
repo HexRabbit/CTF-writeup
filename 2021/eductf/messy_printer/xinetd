@@ -1,0 +1,15 @@
+service test
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/messy_printer/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = messy_printer
+        port = 4001
+        flags = REUSE
+        per_source = 20
+        rlimit_cpu = 3
+        nice = 18
+}
