@@ -1,0 +1,12 @@
+service pwnboy
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/pwnboy/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = pwnboy
+        port = 13337
+        flags = REUSE
+}
